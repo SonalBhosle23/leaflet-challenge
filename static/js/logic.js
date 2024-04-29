@@ -82,7 +82,7 @@ function addLegend(map) {
   legend.onAdd = function () {
     let div = L.DomUtil.create("div", "info legend");
 
-    let grades =  [0, 1, 2, 3, 4, 5]; 
+    let grades =  [0, 1, 2, 3, 4, 5];  
     let colors =  grades.map(depth => getColor(depth));
 
     // Loop through intervals to generate a label with a colored square for each interval.
